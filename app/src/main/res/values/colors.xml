@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pink_normal">#E45182</color>
+    <color name="pink_soft">#EC76AE</color>
+    <color name="pink_hard">#E2487D</color>
+    <color name="pink_ultra_soft">#FFBEDD</color>
+
+    <color name="gray_normal">#190E15</color>
+
+    <color name="danger_high">#FF1717</color>
+    <color name="safe">#3AFF17</color>
+    <color name="danger_low">#1787FF</color>
+
+    <color name="my_dark_primary">#FF000000</color>
+    <color name="colorPrimary">#E45182</color>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.LoginActivity"
+    android:padding="15dp"
+
+    >
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:transitionName="logo_image"
+            android:id="@+id/imageLogo"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baby_care_no_text" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="198dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/LoginTitle"
+            android:textAlignment="textStart"
+            android:textSize="32sp" />
+        <TextView
+            android:id="@+id/tvWelcome2"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:text="@string/LoginTitle2"
+            android:textAlignment="textStart"
+            android:textSize="32sp"
+            android:fontFamily="@font/poppins_medium"/>
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/tipEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topContent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_alternate_email_24"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tipPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipEmail"
+        android:layout_marginTop="10dp"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tipConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipPassword"
+        android:layout_marginTop="10dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/tipConfirmPassword"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/sign_up"
+        />
+    <TextView
+        android:id="@+id/tvLoginNow"
+        android:textColor="@color/pink_normal"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/have_account_login_now"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.LoginActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <ImageView
+        android:transitionName="logo_image"
+        android:id="@+id/imageLogo"
+        android:layout_marginTop="60dp"
+        android:layout_width="180dp"
+        android:layout_height="171dp"
+        android:src="@drawable/ic_crip_pink"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textColor="@color/pink_normal"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/add_device"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:textColor="@color/gray_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/enter_the_product_code"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDeviceCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_alternate_email_24"
+            android:hint="@string/code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnAddDevice"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/active"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/pink_normal"
+        android:id="@+id/tvLoginNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="How to get device code?"/>
+
+</LinearLayout>

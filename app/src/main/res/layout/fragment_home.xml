@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Home"
+            app:menu="@menu/bottom_navigation_menu"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/tvDeviceCode"
+        android:layout_below="@+id/topAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device:"
+        android:textSize="20sp"
+        android:textAlignment="center">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topAppBarLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp">
+
+        <!-- First icon (Pink) -->
+        <LinearLayout
+            android:id="@+id/btnswing"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_square_pink"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_cradle" />
+
+        </LinearLayout>
+
+        <!-- Second icon (Blue) - To the right of the first -->
+        <LinearLayout
+            android:id="@+id/btnmusic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignTop="@id/btnswing"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/btnswing"
+            android:background="@drawable/rounded_square_blue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_music" />
+
+        </LinearLayout>
+
+        <!-- Third icon (Yellow) - Below the first -->
+        <LinearLayout
+            android:id="@+id/btnlight"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/btnswing"
+            android:layout_alignStart="@id/btnswing"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_square_yellow"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_sun" />
+
+        </LinearLayout>
+
+        <!-- Fourth icon (Orange) - Below the second -->
+        <LinearLayout
+            android:id="@+id/btnwindy"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/btnmusic"
+            android:layout_alignStart="@id/btnmusic"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_square_orange"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_wind" />
+
+        </LinearLayout>
+
+        <!-- Fifth icon (Green) - Below the third -->
+        <LinearLayout
+            android:id="@+id/btncamera"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/btnlight"
+            android:layout_alignStart="@id/btnlight"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_square_green"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_cam" />
+
+        </LinearLayout>
+
+        <!-- Sixth icon (Purple) - Below the fourth -->
+        <LinearLayout
+            android:id="@+id/btnTemperature"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/btnwindy"
+            android:layout_alignStart="@id/btnwindy"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_square_purple"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/buttonDesc6"
+                android:src="@drawable/ic_temparature" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

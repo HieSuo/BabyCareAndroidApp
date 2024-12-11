@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device ID"
+        android:textSize="22sp"
+        android:textColor="@color/gray_normal"/>
+
+    <Button
+        android:id="@+id/btn_set_main_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/danger_low"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/btn_unlink_device"
+        android:text="Active" />
+
+    <Button
+        android:id="@+id/btn_unlink_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/danger_high"
+        android:text="Xóa" />
+</RelativeLayout>

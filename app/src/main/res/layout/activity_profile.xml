@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.settingview.ProfileActivity"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_st_privacy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin tài khoản"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/profileImage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelEmail"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_below="@id/header_title"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelEmail"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="thanhieu@gmail.com"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelCreatedAt"
+        android:layout_marginTop="10dp"
+        android:text="Ngày tạo"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_below="@id/textInputLayoutEmail"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCreatedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelCreatedAt"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputCreatedAt"
+            android:text="25/10/2024"
+            android:editable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:layout_below="@+id/textInputLayoutCreatedAt"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.LoginActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <ImageView
+        android:transitionName="logo_image"
+        android:id="@+id/imageLogo"
+        android:layout_marginTop="60dp"
+        android:layout_width="180dp"
+        android:layout_height="171dp"
+        android:src="@drawable/baby_care_no_text"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textColor="@color/gray_normal"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/LoginTitle"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:textColor="@color/gray_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/LoginTitle2"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_alternate_email_24"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        />
+
+     <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/pink_normal"
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/forgot_password"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/pink_normal"
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/register_now"
+        />
+</LinearLayout>
